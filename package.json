@@ -1,0 +1,19 @@
+{
+  "name": "ideal-response",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.13.0",
+    "express": "^4.16.2",
+    "lodash": "^4.17.4",
+    "stats-webpack-plugin": "^0.6.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-middleware": "^2.0.4",
+    "webpack-hot-middleware": "^2.21.0"
+  },
+  "scripts": {
+    "start": "rimraf app && yarn webpack && node server.js",
+    "dev": "rimraf app && node server.js -d"
+  }
+}
